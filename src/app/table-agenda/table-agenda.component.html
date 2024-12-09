@@ -1,1 +1,26 @@
-<p>table-agenda works!</p>
+<div class="container">
+
+    <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Tiulo</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Data</th>
+              <th scope="col">Hora</th>
+              <th scope="col">Deletar</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr *ngFor="let agenda of agenda">
+              <th>{{agenda.id}}</th>
+              <th><a [routerLink]="['/agenda',agenda.id]">{{agenda.titulo}}</a></th>            
+              <th>{{agenda.descricao}}</th>
+              <th>{{agenda.data}}</th>
+              <th>{{agenda.hora}}</th>
+              <td>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
