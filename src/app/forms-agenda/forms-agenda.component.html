@@ -1,1 +1,24 @@
-<p>forms-agenda works!</p>
+<div class="container">
+    <h1>Agendamentos</h1>
+  
+    <form [formGroup] = "formGroupagenda">
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Titulo</label>
+            <input formControlName="titulo" type="text" class="form-control" id="titulo" placeholder="Coloque um Título">
+        </div>
+        <div class="mb-3">
+          <label for="descricao" class="form-label">Descrição</label>
+          <input formControlName="descricao" type="text" class="form-control" id="descricao" placeholder="Coloque uma descrição">
+        </div>
+        <div class="mb-3">
+          <label for="data" class="form-label">Data</label>
+          <input formControlName="data" type="data" class="form-control" id="data">
+        </div>
+        <div class="mb-3">
+          <label for="hora" class="form-label">Hora</label>
+          <input formControlName="hora" type="time" class="form-control" id="hora" placeholder="Coloque a hora">
+        </div>
+        <button class="btn btn-outline-info"(click)="save()" *ngIf="!isEditing">Salvar</button>
+        <button class="btn btn-outline-info" (click)="update()" *ngIf="isEditing">Editar </button>
+    </form>
+  </div>

@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'home', component: HomeAgendaComponent},
   { path: 'agenda', component: TableAgendaComponent},
   { path: 'agenda/:id', component: FormsAgendaComponent},
-  { path: 'agenda', component: FormsAgendaComponent}
+  { path: 'agendar', component: FormsAgendaComponent}
 ];
 
 @NgModule({

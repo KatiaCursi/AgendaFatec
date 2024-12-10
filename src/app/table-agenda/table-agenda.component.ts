@@ -33,7 +33,7 @@ export class TableAgendaComponent {
     };
 
     create(){
-      this.router.navigate(['agenda'])
+      this.router.navigate(['agendar'])
     };
 
 }

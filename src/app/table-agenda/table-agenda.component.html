@@ -1,5 +1,5 @@
 <div class="container">
-
+    
     <table class="table">
           <thead>
             <tr>
@@ -18,9 +18,11 @@
               <th>{{agenda.descricao}}</th>
               <th>{{agenda.data}}</th>
               <th>{{agenda.hora}}</th>
+              <td><button class="btn btn-danger" (click)="delete(agenda)">Deletar</button></td>
               <td>
             </td>
             </tr>
           </tbody>
         </table>
+        <button class="btn btn-outline-info" (click)="create()">Criar</button>
   </div>
