@@ -8,9 +8,9 @@ import { Observable } from 'rxjs';
 })
 export class AgendaService {
 
-  url='http://localhost:8080/agenda';
+  // url='http://localhost:8080/agenda';
   // url='http://52.70.141.1:8080/agenda';
-  // url='https://api.fatecituagenda.duckdns.org/agenda'
+   url='https://api.fatecagenda.duckdns.org/agenda'
 
   constructor(private http:HttpClient) { }
 
